@@ -21,12 +21,13 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            width: 100%; /* Ensure header takes full width */
         }
         img {
             max-width: 100%; /* Ensure the image scales with the screen size */
             height: auto;
-            margin-bottom: -200px;
-            padding-bottom: 0;
+            margin: 0; /* Remove margin to avoid extra space */
+            padding: 0; /* Remove padding to avoid extra space */
         }
         .content {
             display: flex;
@@ -38,6 +39,7 @@
             background: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; /* Add margin-top to create space below the logo */
         }
         .content p {
             margin: 0;
