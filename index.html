@@ -13,7 +13,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,19 +21,19 @@
             align-items: center;
             justify-content: flex-start;
             height: 100vh;
-            background-color: white;
+            background-color: #f9f9f9;
+            color: #333;
         }
         header {
             text-align: center;
             margin: 0;
             padding: 40px 0;
             width: 100%;
+            background-color: #4CAF50;
+            color: white;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
+        header img {
+            max-width: 150px;
         }
         .content {
             display: flex;
@@ -46,15 +46,21 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
+            border-radius: 8px;
+        }
+        .content h1 {
+            color: #4CAF50;
         }
         .content p {
             margin: 0;
             padding-top: 0;
+            line-height: 1.6;
         }
         .highlight {
             font-weight: bold;
             margin-top: 20px;
             margin-bottom: 20px;
+            color: #d9534f;
         }
         .contact-form {
             display: flex;
@@ -70,6 +76,7 @@
             margin: 5px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 16px;
         }
         .contact-form button {
             padding: 10px 20px;
@@ -78,6 +85,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
         .contact-form button:hover {
             background-color: #0056b3;
@@ -99,7 +107,7 @@
         <p>Get 30% off with Arbisource using our affiliate link: <a href="https://app.arbisource.com/register?via=aaron">Arbisource</a></p>
         <p>Enjoy discounts with Top Cashback using our affiliate link: <a href="https://www.topcashback.co.uk/ref/aaronmoorcroft">Top Cashback Discount</a></p>
         <p>Follow us on <a href="https://www.youtube.com/@Aaron-r9h8b/videos" target="_blank" rel="noopener noreferrer">YouTube</a> and <a href="https://www.tiktok.com/@aaron.moorcroft" target="_blank" rel="noopener noreferrer">TikTok</a>.</p>
-        <div>
+        <div class="contact-form">
             <form action="https://formsubmit.co/info@jam-fulfilment.co.uk" method="POST">
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="email" name="email" placeholder="Your email" required>
