@@ -22,6 +22,17 @@
             padding: 40px 0;
             width: 100%;
         }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         .contact-form {
             display: flex;
             flex-direction: column;
@@ -53,9 +64,13 @@
 <body>
     <header>
         <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
     <div class="contact-form">
-        <form action="bcc04a6ab5ce373f31fe31eee0d39645" method="post">
+        <form action="https://formsubmit.co/info@jam-fulfilment.co.uk" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="_replyto" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
