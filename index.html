@@ -56,38 +56,58 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-        nav {
-            margin-bottom: 20px;
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
         }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #007BFF;
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>
         <img src="JamSmall.png" alt="J.A.M Fulfilment Limited Logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
     </header>
     <div class="content">
         <h1>J.A.M Fulfilment Limited</h1>
         <p>Welcome to J.A.M Fulfilment Limited. We are dedicated Amazon FBA resellers, committed to achieving success and sharing our insights. Our goal is to provide comprehensive training on the entire process. Soon, we will offer an eBook at an affordable price to guide you through starting an Amazon FBA business from scratch.</p>
         <p>We aim to share our experiences and knowledge in areas often overlooked by typical social media users. We won't promise a six-figure salary within six months of starting. Instead, we offer real-world experience with real-world costs. For example, we will cover how to start a company, including the costs involved. This eBook will be an excellent starting point to help you avoid costly mistakes.</p>
-        <p>For more information, please use the Contact Us form above. <!-- email us at <a href="mailto:info@jam-fulfilment.co.uk">info@jam-fulfilment.co.uk</a>.</p> --> </p>
+        <p>For more information, please email us at <a href="mailto:info@jam-fulfilment.co.uk">info@jam-fulfilment.co.uk</a>.</p>
         <br>
         <p class="highlight">Deals & Discounts:</p>
         <br>
         <p>Get 30% off with Arbisource using our affiliate link: <a href="https://app.arbisource.com/register?via=aaron">Arbisource</a></p>
         <p>Enjoy discounts with Top Cashback using our affiliate link: <a href="https://www.topcashback.co.uk/ref/aaronmoorcroft">Top Cashback Discount</a></p>
         <p>Follow us on <a href="https://www.youtube.com/@Aaron-r9h8b/videos" target="_blank" rel="noopener noreferrer">YouTube</a> and <a href="https://www.tiktok.com/@aaron.moorcroft" target="_blank" rel="noopener noreferrer">TikTok</a>.</p>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="your_form_processing_script.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
